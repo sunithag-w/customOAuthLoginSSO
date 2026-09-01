@@ -6,7 +6,7 @@ QUERRY TO INSERT THE PROVIDER DETAILS INTO OUTH_PROVIDERS TABLE
 
 1.GOOGLE
 
-=============
+==
 INSERT INTO oauth_provider (
     provider_name,
     display_name,
@@ -33,8 +33,7 @@ INSERT INTO oauth_provider (
 
 2.MICROSOFT
 
-===============
-
+==
 INSERT INTO oauth_provider (
     provider_name,
     display_name,
@@ -61,7 +60,7 @@ INSERT INTO oauth_provider (
 
 3.AWS
 
-=================
+==
 INSERT INTO oauth_provider (
     provider_name,
     display_name,

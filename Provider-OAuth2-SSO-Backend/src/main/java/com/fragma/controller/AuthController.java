@@ -79,6 +79,10 @@ public class AuthController {
         log.info("Profile request received");
 
         String email = oauthUser.getAttribute("email");
+        
+        if (email == null) {
+            email = oauthUser.getAttribute("preferred_username");
+        }
 
         if (email == null) {
             email = oauthUser.getAttribute("preferred_username");
@@ -99,6 +103,10 @@ public class AuthController {
                 
 
         String email = oauth2User.getAttribute("email");
+        
+        if (email == null) {
+            email = oauth2User.getAttribute("preferred_username");
+        }
 
         if (email == null) {
 
@@ -134,6 +142,9 @@ public class AuthController {
                 
 
         String email = oauth2User.getAttribute("email");
+        if (email == null) {
+            email = oauth2User.getAttribute("preferred_username");
+        }
         String name = oauth2User.getAttribute("name");
         String picture = oauth2User.getAttribute("picture");
 

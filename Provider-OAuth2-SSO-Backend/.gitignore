@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 488cb4ef5e820d87cfa975ea711e73c8bd347a94
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -35,13 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
-<<<<<<< HEAD
-=======
 
-.metadata/
-.vscode/
-.idea/
-*.iml
-target/
 
->>>>>>> 488cb4ef5e820d87cfa975ea711e73c8bd347a94

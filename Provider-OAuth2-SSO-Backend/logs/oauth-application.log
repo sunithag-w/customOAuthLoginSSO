@@ -1,0 +1,156 @@
+2026-09-01T12:59:39.462+05:30  INFO 47928 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Starting GoogleOauth2SsoRestapiApplication using Java 21.0.8 with PID 47928 (D:\AssignmentFragma\google-oauth2-sso-restapi\target\classes started by Sunitha in D:\AssignmentFragma\google-oauth2-sso-restapi)
+2026-09-01T12:59:39.474+05:30 DEBUG 47928 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-01T12:59:39.478+05:30  INFO 47928 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-09-01T12:59:39.685+05:30  INFO 47928 --- [google-oauth2-sso-restapi] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\gugul\.m2\repository\com\oracle\database\jdbc\ojdbc17\23.26.3.0.0\ojdbc17-23.26.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/gugul/.m2/repository/com/oracle/database/jdbc/ojdbc17/23.26.3.0.0/oraclepki.jar
+2026-09-01T12:59:39.687+05:30  INFO 47928 --- [google-oauth2-sso-restapi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-01T12:59:39.689+05:30  INFO 47928 --- [google-oauth2-sso-restapi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-01T12:59:40.797+05:30  WARN 47928 --- [google-oauth2-sso-restapi] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.fragma.GoogleOauth2SsoRestapiApplication]
+2026-09-01T12:59:41.014+05:30 ERROR 47928 --- [google-oauth2-sso-restapi] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.fragma.GoogleOauth2SsoRestapiApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:290) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:452) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:316) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:795) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:603) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.1.jar:4.1.1]
+	at com.fragma.GoogleOauth2SsoRestapiApplication.main(GoogleOauth2SsoRestapiApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.1.1.jar:4.1.1]
+Caused by: java.io.FileNotFoundException: class path resource [com/fragma/config/DynamicClientRegistrationRepository.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:62) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:127) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.type.classreading.AbstractMetadataReaderFactory.getMetadataReader(AbstractMetadataReaderFactory.java:62) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:40) ~[spring-core-7.0.9.jar:7.0.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:218) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:357) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:285) ~[spring-context-7.0.9.jar:7.0.9]
+	... 18 common frames omitted
+
+2026-09-01T12:59:45.887+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Starting GoogleOauth2SsoRestapiApplication using Java 21.0.8 with PID 4468 (D:\AssignmentFragma\google-oauth2-sso-restapi\target\classes started by Sunitha in D:\AssignmentFragma\google-oauth2-sso-restapi)
+2026-09-01T12:59:45.893+05:30 DEBUG 4468 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-01T12:59:45.897+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-09-01T12:59:46.025+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\gugul\.m2\repository\com\oracle\database\jdbc\ojdbc17\23.26.3.0.0\ojdbc17-23.26.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/gugul/.m2/repository/com/oracle/database/jdbc/ojdbc17/23.26.3.0.0/oraclepki.jar
+2026-09-01T12:59:46.027+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-01T12:59:46.033+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-01T12:59:47.635+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-01T12:59:47.742+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2026-09-01T12:59:49.073+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-01T12:59:49.109+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-01T12:59:49.113+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-01T12:59:49.200+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3165 ms
+2026-09-01T12:59:49.954+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-01T12:59:50.068+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-01T12:59:50.870+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-01T12:59:50.942+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-01T12:59:51.655+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@219bedb6
+2026-09-01T12:59:51.657+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-01T12:59:52.098+05:30  WARN 4468 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2026-09-01T12:59:52.114+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 21.3
+	Default catalog/schema: undefined/SUNITHA
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-01T12:59:53.610+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-01T12:59:54.328+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-01T12:59:54.545+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-01T12:59:55.436+05:30  WARN 4468 --- [google-oauth2-sso-restapi] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-01T12:59:57.057+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-01T12:59:57.159+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Started GoogleOauth2SsoRestapiApplication in 12.168 seconds (process running for 13.266)
+2026-09-01T13:00:16.252+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-01T13:00:16.255+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-01T13:00:16.268+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2026-09-01T13:00:16.673+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-1] com.fragma.service.AuthService           : Fetching enabled OAuth providers from database
+2026-09-01T13:00:21.175+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-3] com.fragma.controller.AuthController     : OAuth login request received for provider: google
+2026-09-01T13:00:21.304+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-3] com.fragma.controller.AuthController     : OAuth provider validated: google
+2026-09-01T13:00:21.308+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-3] com.fragma.controller.AuthController     : Redirecting user to OAuth authorization endpoint
+2026-09-01T13:00:30.119+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.config.OAuth2SuccessHandler   : OAuth authentication successful
+2026-09-01T13:00:30.121+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.config.OAuth2SuccessHandler   : OAuth provider authentication completed: google
+2026-09-01T13:00:30.123+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.config.OAuth2SuccessHandler   : Checking whether OAuth user is already registered
+2026-09-01T13:00:30.137+05:30 DEBUG 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.service.AuthService           : Checking whether user already exists
+2026-09-01T13:00:30.524+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.service.AuthService           : Existing user found
+2026-09-01T13:00:30.525+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.config.OAuth2SuccessHandler   : Existing user detected. Redirecting to profile page
+2026-09-01T13:00:31.144+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-6] com.fragma.controller.AuthController     : Profile request received
+2026-09-01T13:00:31.145+05:30 DEBUG 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-6] com.fragma.controller.AuthController     : Fetching profile for authenticated user
+2026-09-01T13:00:31.152+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-6] com.fragma.service.AuthService           : Searching for user profile
+2026-09-01T13:00:34.809+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-9] com.fragma.controller.AuthController     : OAuth login request received for provider: cognito
+2026-09-01T13:00:34.820+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-9] com.fragma.controller.AuthController     : OAuth provider validated: cognito
+2026-09-01T13:00:34.824+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-9] com.fragma.controller.AuthController     : Redirecting user to OAuth authorization endpoint
+2026-09-01T13:00:37.946+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-2] com.fragma.config.OAuth2SuccessHandler   : OAuth authentication successful
+2026-09-01T13:00:37.949+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-2] com.fragma.config.OAuth2SuccessHandler   : OAuth provider authentication completed: cognito
+2026-09-01T13:00:37.950+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-2] com.fragma.config.OAuth2SuccessHandler   : Checking whether OAuth user is already registered
+2026-09-01T13:00:37.950+05:30 DEBUG 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-2] com.fragma.service.AuthService           : Checking whether user already exists
+2026-09-01T13:00:37.957+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-2] com.fragma.service.AuthService           : Existing user found
+2026-09-01T13:00:37.957+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-2] com.fragma.config.OAuth2SuccessHandler   : Existing user detected. Redirecting to profile page
+2026-09-01T13:00:38.050+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-1] com.fragma.controller.AuthController     : Profile request received
+2026-09-01T13:00:38.050+05:30 DEBUG 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-1] com.fragma.controller.AuthController     : Fetching profile for authenticated user
+2026-09-01T13:00:38.053+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-1] com.fragma.service.AuthService           : Searching for user profile
+2026-09-01T13:00:45.155+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.controller.AuthController     : OAuth login request received for provider: azure
+2026-09-01T13:00:45.189+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.controller.AuthController     : OAuth provider validated: azure
+2026-09-01T13:00:45.189+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-4] com.fragma.controller.AuthController     : Redirecting user to OAuth authorization endpoint
+2026-09-01T13:00:48.920+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-7] com.fragma.config.OAuth2SuccessHandler   : OAuth authentication successful
+2026-09-01T13:00:48.922+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-7] com.fragma.config.OAuth2SuccessHandler   : OAuth provider authentication completed: azure
+2026-09-01T13:00:48.924+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-7] com.fragma.config.OAuth2SuccessHandler   : Checking whether OAuth user is already registered
+2026-09-01T13:00:48.924+05:30 DEBUG 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-7] com.fragma.service.AuthService           : Checking whether user already exists
+2026-09-01T13:00:48.952+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-7] com.fragma.service.AuthService           : Existing user found
+2026-09-01T13:00:48.952+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-7] com.fragma.config.OAuth2SuccessHandler   : Existing user detected. Redirecting to profile page
+2026-09-01T13:00:49.204+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-8] com.fragma.controller.AuthController     : Profile request received
+2026-09-01T13:00:49.207+05:30 DEBUG 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-8] com.fragma.controller.AuthController     : Fetching profile for authenticated user
+2026-09-01T13:00:49.210+05:30  INFO 4468 --- [google-oauth2-sso-restapi] [http-nio-8080-exec-8] com.fragma.service.AuthService           : Searching for user profile
+2026-09-01T14:28:56.251+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Starting GoogleOauth2SsoRestapiApplication using Java 21.0.8 with PID 6704 (D:\AssignmentFragma\google-oauth2-sso-restapi\target\classes started by Sunitha in D:\AssignmentFragma\google-oauth2-sso-restapi)
+2026-09-01T14:28:56.259+05:30 DEBUG 6704 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Running with Spring Boot v4.1.1, Spring v7.0.9
+2026-09-01T14:28:56.262+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-09-01T14:28:56.352+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\gugul\.m2\repository\com\oracle\database\jdbc\ojdbc17\23.26.3.0.0\ojdbc17-23.26.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/gugul/.m2/repository/com/oracle/database/jdbc/ojdbc17/23.26.3.0.0/oraclepki.jar
+2026-09-01T14:28:56.352+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-01T14:28:56.353+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-01T14:28:57.477+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-01T14:28:57.567+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2026-09-01T14:28:58.602+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-01T14:28:58.632+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-01T14:28:58.634+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-01T14:28:58.718+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2364 ms
+2026-09-01T14:28:59.303+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-01T14:28:59.369+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-01T14:28:59.991+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-01T14:29:00.040+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-01T14:29:00.546+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@366cc48f
+2026-09-01T14:29:00.549+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-01T14:29:00.904+05:30  WARN 6704 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2026-09-01T14:29:00.915+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 21.3
+	Default catalog/schema: undefined/SUNITHA
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-01T14:29:01.888+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-01T14:29:02.310+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-01T14:29:02.454+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-01T14:29:03.150+05:30  WARN 6704 --- [google-oauth2-sso-restapi] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-01T14:29:04.044+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-01T14:29:04.054+05:30  INFO 6704 --- [google-oauth2-sso-restapi] [restartedMain] c.f.GoogleOauth2SsoRestapiApplication    : Started GoogleOauth2SsoRestapiApplication in 8.495 seconds (process running for 9.561)
